@@ -79,6 +79,8 @@ function handleNameChangeAttempts(socket, nickNames, namesUsed) {
                     text: previousName + ' agora é como ' + name + '.'
                 });
             } else {
+  
+
                 socket.emit('nameResult', {
                     success: false,
                     message: 'Este nome j&acute est&acute em uso'
